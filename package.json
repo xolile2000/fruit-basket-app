@@ -1,0 +1,18 @@
+{
+  "name": "fruit-basket-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "pg": "^8.7.1"
+  }
+}
