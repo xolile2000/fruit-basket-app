@@ -18,9 +18,11 @@ Deploy your app to Heroku.
 
 ## Next steps
 
-Add user login support. A user can only see their own baskets.
+Add user login support. A user can only see their own baskets. Samuel can see all the fruit basket orders.
 
 Add a status column to the `basket` table supporting these statuses - `ordered`, `accepted`, `rejected`, `ready_to_deliver` ,`delivered`.
+
+Show the order status clearly on the screen.
 
 Samuel would like to be able to accept or reject fruit orders. If an order is `rejected` Samuel would like to write a message to the users. The user can then fix the order and resubmit it.
 
