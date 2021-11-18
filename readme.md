@@ -19,7 +19,7 @@ Deploy your app to Heroku.
 ### Screencasts
 
 * [Add a basket](https://www.youtube.com/embed/I2v7kkHCuFI)
-* [Add fruits to the basket](https://www.youtube.com/embed/G5PmuyjVCrc)
+* [Add fruits to the basket](https://youtu.be/asUgQQKZtdI)
 
 ## Next steps
 
