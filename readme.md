@@ -16,6 +16,16 @@ Show a list of all the Fruit Baskets - everybody can currently see this.
 
 Deploy your app to Heroku.
 
+## Screencasts
+
+### Add a basket
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I2v7kkHCuFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Add fruits to the basket
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/asUgQQKZtdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Next steps
 
 Add user login support. A user can only see their own baskets. Samuel can see all the fruit basket orders.
