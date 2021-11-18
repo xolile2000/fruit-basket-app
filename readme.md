@@ -21,10 +21,6 @@ Deploy your app to Heroku.
 * [Add a basket](https://www.youtube.com/embed/I2v7kkHCuFI)
 * [Add fruits to the basket](https://www.youtube.com/embed/G5PmuyjVCrc)
 
-### Add fruits to the basket
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/asUgQQKZtdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Next steps
 
 Add user login support. A user can only see their own baskets. Samuel can see all the fruit basket orders.
