@@ -16,7 +16,7 @@ Show a list of all the Fruit Baskets - everybody can currently see this.
 
 Deploy your app to Heroku.
 
-## Screencasts
+### Screencasts
 
 * [Add a basket](https://www.youtube.com/embed/I2v7kkHCuFI)
 * [Add fruits to the basket](https://www.youtube.com/embed/G5PmuyjVCrc)
@@ -33,6 +33,14 @@ Samuel would like to be able to accept or reject fruit orders. If an order is `r
 
 Show a list of all the orders that is ready for delivery. And allow these orders to be marked as delivered.
 
+### Screencasts
+
+These screencasts will be published soon...
+
+* [User login support](#)
+* [Add basket status](#)
+* [Accept or reject orders](#)
+* [Show orders ready for delivery](#)
 
 
 
