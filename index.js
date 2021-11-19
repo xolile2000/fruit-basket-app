@@ -1,8 +1,25 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
+const pg = require("pg");
 
 const app = express();
 const PORT =  process.env.PORT || 3017;
+const FruitBasket = require("./fruit-basket-service");
+
+
+
+const Pool = pg.Pool;
+require('dotenv').config()
+
+
+
+const connectionString = process.env.DATABASE_URL || 'postgresql://codex:pg123@localhost:5432/fruit_basket';
+
+const pool = new Pool({
+    connectionString
+});
+
+const fruitBasket = FruitBasket(pool);
 
 // enable the req.body object - to allow us to use HTML forms
 app.use(express.json());
@@ -20,9 +37,11 @@ app.set('view engine', 'handlebars');
 
 let counter = 0;
 
-app.get('/', function(req, res) {
+app.get('/', async function(req, res) {
+	const baskets = await fruitBasket.listBaskets();
+	console.log(baskets)
 	res.render('index', {
-		counter
+		baskets
 	});
 });
 
@@ -30,8 +49,13 @@ app.get('/basket/add', function(req, res) {
 	res.render('basket/add');
 });
 
-app.get('/basket/edit', function(req, res) {
+app.get('/basket/edit/{id}', function(req, res) {
 	res.render('basket/edit');
+});
+app.post('/basket/add',  async function(req, res) {
+	console.log(req.body)
+	 await fruitBasket.createBasket(req.body.basket_name);
+	res.redirect('/');
 });
 
 // app.post('/count', function(req, res) {

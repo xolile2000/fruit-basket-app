@@ -28,7 +28,9 @@ module.exports = function(pool) {
 	async function listFruits() {
 		const selectFruitsSQL = `select * from fruit`;
 		const result = await pool.query(selectFruitsSQL)
-		return result.rows;
+		const results = result.rows;
+		console.log(results)
+		return results;
 	}
 
 	async function listBaskets() {
