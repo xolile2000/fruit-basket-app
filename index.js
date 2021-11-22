@@ -39,7 +39,6 @@ let counter = 0;
 
 app.get('/', async function(req, res) {
 	const baskets = await fruitBasket.listBaskets();
-	console.log(baskets)
 	res.render('index', {
 		baskets
 	});
@@ -49,11 +48,11 @@ app.get('/basket/add', function(req, res) {
 	res.render('basket/add');
 });
 
-app.get('/basket/edit/{id}', function(req, res) {
+app.get('/basket/edit/:id', function(req, res) {
 	res.render('basket/edit');
 });
+
 app.post('/basket/add',  async function(req, res) {
-	console.log(req.body)
 	 await fruitBasket.createBasket(req.body.basket_name);
 	res.redirect('/');
 });

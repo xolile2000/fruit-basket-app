@@ -34,11 +34,12 @@
 			<th>Qty</th>
 			<th>Total cost</th>
 		</tr>
-		{{#each }}
+		{{#each baskets}}
 		<tr>
 			<d>{{fruit_name}}</d>
 			<d>{{qty}}</d>
 			<d>{{total_cost}}</d>
+			{{!-- <td><a href="/basket/edit/{{id}}">edit</a></td> --}}
 		</tr>
 		{{/each}}
 	</table>

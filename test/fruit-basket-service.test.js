@@ -15,6 +15,7 @@ describe("The fruit basket service", function() {
 	beforeEach(async function(){
 		await pool.query(`delete from basket_item;`);
 		await pool.query(`delete from basket;`);
+		
 	});
 
 	this.afterAll(async function() {
